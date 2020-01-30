@@ -25,6 +25,7 @@ public:
 
 	size_t length() {
 		// to do
+	return 0;
 	}
 
 	bool equals(Object *other){
