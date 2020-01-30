@@ -23,10 +23,10 @@ Object contains the following methods:
 2) hash(): generate hash code for this object
 3) virtual hash_me(): override hash()
 
-helper.h: (not included in this assignment)
+helper.h:
 It includes all kinds of print for int, double, char*, size_t and String. We can call the function using 'println'.
 
-string.h: (not included in this assignment)
+string.h: 
 provides length, equals, hash_me, compare and concat functionalities.
 
 test-array.cpp:
