@@ -30,7 +30,7 @@ public:
 	}
 
 	// check if this array equals to other array
-	bool equals(Array *other){
+	bool equals(Object *other){
 	}
 
 	// hash_me override
