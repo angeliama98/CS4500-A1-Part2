@@ -25,7 +25,7 @@ class Object{
 		}
 
 		// generate hash code
-		size_t hash() {
+		virtual size_t hash() {
 		}
 
 		// hash code cast
