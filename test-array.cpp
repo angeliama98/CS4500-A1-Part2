@@ -1,5 +1,5 @@
 #include "array.h" 
-//#include "helper.h"
+#include "helper.h"
 
 void FAIL() {   exit(1);    }
 void t_true(bool p) { if (!p) FAIL(); }
@@ -24,14 +24,14 @@ void test2() {
   String * t = new String("World");
   String * u = s->concat(t);
   Array * a = new Array();
-  t_true(a->legnth() == 0);
+  t_true(a->length() == 0);
   a->add(s);
   a->set(1,t);
   a->add(u);
   t_true(a->get(2)->equals(u));
   t_true(a->length() == 3);
   a->remove(u);
-  t_ture(a->length() == 2);
+  t_true(a->length() == 2);
   t_true(a->get(1)->equals(t));
   //println("2");
 }
