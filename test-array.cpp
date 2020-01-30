@@ -14,8 +14,10 @@ void test1() {
   b->add(s);
   t_true(a->equals(a));
   t_true(b->equals(b));
+  t_true(a->equals(b));
+  b->add(s);
   t_false(a->equals(b));
-  //println("1");
+  println("1");
 }
 
 // test length, add, set, remove
@@ -33,7 +35,7 @@ void test2() {
   a->remove(u);
   t_true(a->length() == 2);
   t_true(a->get(1)->equals(t));
-  //println("2");
+  println("2");
 }
  
  // test hash_me
@@ -43,7 +45,7 @@ void test3() {
   a->add(s);
   println(a->hash_me());
   t_true(a->hash() == a->hash());
-  //println("3");
+  println("3");
 }
  
  // test append, get
@@ -59,7 +61,7 @@ void test4() {
   a->append(b);
   t_true(a->length() == 3);
   t_true(a->get(2)->equals(u));
-  //println("4");
+  println("4");
 }
 
  // test index_of, clear
@@ -76,7 +78,7 @@ void test5() {
   t_true(a->get(2)->equals(u));
   a->clear();
   t_true(a->length() == 0);
-  //println("5");
+  println("5");
 }
 
 // make all tests run
