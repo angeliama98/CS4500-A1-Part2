@@ -46,8 +46,8 @@ public:
 
 	}
 
-	// add the obejct to the end of the array
-	Object* add(Object* o){
+	// add the obejct at the specified index, return error if out-of-bounds
+	Object* add(size_t index, Object* o){
 
 	}
 
