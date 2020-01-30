@@ -37,4 +37,6 @@ public:
 		// to do
         return 0;
 	}
+	
+	String* concat(String* s)
 };
