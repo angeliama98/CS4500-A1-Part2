@@ -5,7 +5,7 @@
 
 #include "object.h"
 
-class Array {
+class Array : public Object {
 public:
 	// to do
 
