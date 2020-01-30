@@ -11,8 +11,8 @@ void test1() {
   String * s = new String("Hello");
   Array * a = new Array();
   Array * b = new Array();
-  a->add(s);
-  b->add(s);
+  a->add(0, s);
+  b->add(1, s);
   t_true(a->equals(a));
   t_true(b->equals(b));
   t_false(a->equals(b));
@@ -26,9 +26,9 @@ void test2() {
   String * u = s->concat(t);
   Array * a = new Array();
   t_true(a->length() == 0);
-  a->add(s);
+  a->add(0,s);
   a->set(1,t);
-  a->add(u);
+  a->add(2,u);
   t_true(a->get(2)->equals(u));
   t_true(a->length() == 3);
   a->remove(2);
@@ -41,7 +41,7 @@ void test2() {
 void test3() {
   String * s = new String("Hello");
   Array * a = new Array();
-  a->add(s);
+  a->add(0,s);
   t_true(a->hash() == a->hash());
   printf("Test 3 passed!");
 }
@@ -52,10 +52,10 @@ void test4() {
   String * t = new String("World");
   String * u = s->concat(t);
   Array * a = new Array();
-  a->add(s);
+  a->add(0,s);
   Array * b = new Array();
-  b->add(t);
-  b->add(u);
+  b->add(0,t);
+  b->add(1,u);
   a->append(b);
   t_true(a->length() == 3);
   t_true(a->get(2)->equals(u));
@@ -68,9 +68,9 @@ void test5() {
   String * t = new String("World");
   String * u = s->concat(t);
   Array * a = new Array();
-  a->add(s);
-  a->add(t);
-  a->add(u);
+  a->add(0,s);
+  a->add(1,t);
+  a->add(2,u);
   t_true(a->index_of(s) == 0);
   t_true(a->index_of(u) == 1);
   t_true(a->get(2)->equals(u));
