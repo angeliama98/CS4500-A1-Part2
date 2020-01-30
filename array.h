@@ -7,8 +7,7 @@
 
 class Array {
 public:
-	Object *data_; //owned -> means responsible for deleting
-	size_t size_;
+	// to do
 
 /**
 * Array - to represent a list of objects.
@@ -18,14 +17,12 @@ public:
 
 	// constructor
 	Array() {
-		size_ = 0;
-
-		data_ = new Object[size_ + 1];
+		// to do
 	}
 
 	// deconstructor
 	~Array(){
-		delete[] data_;
+		// to do
 	}
 
 	// get the length of this array
