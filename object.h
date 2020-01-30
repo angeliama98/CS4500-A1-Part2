@@ -6,8 +6,7 @@
 
 class Object{
 	public:
-		size_t hash_;
-
+		// to do
 /**
 * Object - represent an item that can be put into an array.
 *
@@ -16,7 +15,7 @@ class Object{
 
 		// constructor
 		Object() { 
-			hash_ = 0;
+			// to do
 		}
 		// deconstructor
 		virtual ~Object() { }
