@@ -28,11 +28,11 @@ void test2() {
   Array * a = new Array();
   t_true(a->length() == 0);
   a->add(s);
-  a->set(1,t);
+  a->set(0,t);
   a->add(u);
   t_true(a->get(2)->equals(u));
   t_true(a->length() == 3);
-  a->remove(u);
+  a->remove(2);
   t_true(a->length() == 2);
   t_true(a->get(1)->equals(t));
   println("2");
@@ -42,9 +42,11 @@ void test2() {
 void test3() {
   String * s = new String("Hello");
   Array * a = new Array();
+  Array * b = new Array();
   a->add(s);
+  b->add(s);
   println(a->hash_me());
-  t_true(a->hash() == a->hash());
+  t_true(a->hash() == b->hash());
   println("3");
 }
  
@@ -74,7 +76,7 @@ void test5() {
   a->add(t);
   a->add(u);
   t_true(a->index_of(s) == 0);
-  t_true(a->index_of(u) == 1);
+  t_true(a->index_of(u) == 2);
   t_true(a->get(2)->equals(u));
   a->clear();
   t_true(a->length() == 0);
