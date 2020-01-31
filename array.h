@@ -47,7 +47,7 @@ public:
 	}
 
 	// add the obejct to the end of the array
-	Object* add(Object* o){
+	void add(Object* o){
 
 	}
 
