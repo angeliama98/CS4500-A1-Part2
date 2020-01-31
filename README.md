@@ -13,7 +13,7 @@ Array contains an array of Objects and the size of the array. The Array class ha
 6) add(Object* o): add the object to the end of the array
 7) set(size_t index, Object* o): set the element in the given index to the given object
 8) remove(size_t index): remove the element with the given index
-9) index_of(Object* o): get the index of the given object
+9) index_of(Object* o): get the index of the given object. If the object does not exist in the array, return the index that is larger than size_.
 10) clear(): remove all elements in the array
 
 
