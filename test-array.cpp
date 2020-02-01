@@ -1,5 +1,6 @@
 #include "array.h" 
 #include "helper.h"
+#include "string.h"
 
 void FAIL() {   exit(1);    }
 void t_true(bool p) { if (!p) FAIL(); }
